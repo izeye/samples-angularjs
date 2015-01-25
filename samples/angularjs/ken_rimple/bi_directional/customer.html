@@ -1,0 +1,14 @@
+<table>
+    <caption>Customer</caption>
+    <tr>
+        <th>First</th>
+        <td>{{ customer.first_name }}</td>
+    </tr>
+    <tr>
+        <th>Last</th>
+        <td>{{ customer.last_name }}</td>
+    </tr>
+</table>
+<h2>Try modifying inner scope data</h2>
+<input type="text" ng-model="customer.first_name">
+<input type="text" ng-model="customer.last_name">

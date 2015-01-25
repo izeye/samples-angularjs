@@ -1,0 +1,15 @@
+<table>
+    <caption>Customer Directive output</caption>
+    <tr>
+        <th>First</th>
+        <td>{{ first_name }}</td>
+    </tr>
+    <tr>
+        <th>Last</th>
+        <td>{{ last_name }}</td>
+    </tr>
+</table>
+<h2>Modifying inner scope variable</h2>
+<em>Inner scope data does not modify outer scope</em>
+<input type="text" ng-model="first_name">
+<input type="text" ng-model="last_name">

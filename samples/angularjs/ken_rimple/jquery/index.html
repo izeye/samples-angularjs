@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script src="../../../../libs/jquery/2.1.3/jquery-2.1.3.min.js"></script>
+    <script src="../../../../libs/angularjs/1.3.9/angular.min.js"></script>
+
+    <script src="script.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="PageSetupCtrl">
+<h1>Change that color!</h1>
+Color In:
+<select ng-model="colorIn">
+    <option>red</option>
+    <option>green</option>
+    <option>blue</option>
+</select>
+Color Out:
+<select ng-model="colorOut">
+    <option>red</option>
+    <option>green</option>
+    <option>blue</option>
+    <option>black</option>
+</select>
+<div change-color in="{{ colorIn }}" out="{{ colorOut }}"></div>
+<p>This is the directive equivalent of <code>$("[change-color]").mouseover() { ... }</code></p>
+</body>
+</html>
